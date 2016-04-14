@@ -12,6 +12,10 @@
 		762D770D1CC03F8900D39E0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762D770B1CC03F8900D39E0D /* Main.storyboard */; };
 		762D770F1CC03F8900D39E0D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762D770E1CC03F8900D39E0D /* Assets.xcassets */; };
 		762D77121CC03F8900D39E0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762D77101CC03F8900D39E0D /* LaunchScreen.storyboard */; };
+		762D77211CC0416800D39E0D /* NotoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 762D771D1CC0416800D39E0D /* NotoSans-Bold.ttf */; };
+		762D77221CC0416800D39E0D /* NotoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 762D771E1CC0416800D39E0D /* NotoSans-BoldItalic.ttf */; };
+		762D77231CC0416800D39E0D /* NotoSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 762D771F1CC0416800D39E0D /* NotoSans-Italic.ttf */; };
+		762D77241CC0416800D39E0D /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 762D77201CC0416800D39E0D /* NotoSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		762D770E1CC03F8900D39E0D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		762D77111CC03F8900D39E0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		762D77131CC03F8900D39E0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		762D771D1CC0416800D39E0D /* NotoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Bold.ttf"; sourceTree = "<group>"; };
+		762D771E1CC0416800D39E0D /* NotoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
+		762D771F1CC0416800D39E0D /* NotoSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Italic.ttf"; sourceTree = "<group>"; };
+		762D77201CC0416800D39E0D /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +62,10 @@
 		762D77061CC03F8900D39E0D /* neomadgic-showcase */ = {
 			isa = PBXGroup;
 			children = (
+				762D771C1CC0414100D39E0D /* Resources */,
+				762D771B1CC0413C00D39E0D /* Model */,
+				762D771A1CC0413200D39E0D /* View */,
+				762D77191CC0412B00D39E0D /* Controller */,
 				762D77071CC03F8900D39E0D /* AppDelegate.swift */,
 				762D77091CC03F8900D39E0D /* ViewController.swift */,
 				762D770B1CC03F8900D39E0D /* Main.storyboard */,
@@ -62,6 +74,38 @@
 				762D77131CC03F8900D39E0D /* Info.plist */,
 			);
 			path = "neomadgic-showcase";
+			sourceTree = "<group>";
+		};
+		762D77191CC0412B00D39E0D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		762D771A1CC0413200D39E0D /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		762D771B1CC0413C00D39E0D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		762D771C1CC0414100D39E0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				762D771D1CC0416800D39E0D /* NotoSans-Bold.ttf */,
+				762D771E1CC0416800D39E0D /* NotoSans-BoldItalic.ttf */,
+				762D771F1CC0416800D39E0D /* NotoSans-Italic.ttf */,
+				762D77201CC0416800D39E0D /* NotoSans-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,9 +166,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762D77211CC0416800D39E0D /* NotoSans-Bold.ttf in Resources */,
 				762D77121CC03F8900D39E0D /* LaunchScreen.storyboard in Resources */,
+				762D77221CC0416800D39E0D /* NotoSans-BoldItalic.ttf in Resources */,
+				762D77231CC0416800D39E0D /* NotoSans-Italic.ttf in Resources */,
 				762D770F1CC03F8900D39E0D /* Assets.xcassets in Resources */,
 				762D770D1CC03F8900D39E0D /* Main.storyboard in Resources */,
+				762D77241CC0416800D39E0D /* NotoSans-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

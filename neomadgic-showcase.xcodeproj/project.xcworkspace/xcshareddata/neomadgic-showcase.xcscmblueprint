@@ -1,0 +1,28 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "106BAADC44503B659037D91CE9314ECB8C7D50C9",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "106BAADC44503B659037D91CE9314ECB8C7D50C9" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "D413CE20-08F2-4799-99A0-DB22731230AE",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "106BAADC44503B659037D91CE9314ECB8C7D50C9" : "neomadgic-showcase\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "neomadgic-showcase",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "neomadgic-showcase.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:neomadgic\/neomadgic-showcase.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "106BAADC44503B659037D91CE9314ECB8C7D50C9"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:neomadgic\/neomadgic-showcase.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "106BAADC44503B659037D91CE9314ECB8C7D50C9"
+    }
+  ]
+}
