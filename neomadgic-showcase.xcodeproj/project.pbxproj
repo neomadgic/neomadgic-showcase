@@ -18,6 +18,8 @@
 		762D77241CC0416800D39E0D /* NotoSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 762D77201CC0416800D39E0D /* NotoSans-Regular.ttf */; };
 		76AE5C311CC08E0D0048A94B /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C301CC08E0D0048A94B /* MaterialView.swift */; };
 		76AE5C341CC08F7D0048A94B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C331CC08F7D0048A94B /* Constants.swift */; };
+		76AE5C361CC09F750048A94B /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C351CC09F750048A94B /* MaterialButton.swift */; };
+		76AE5C381CC0A53B0048A94B /* MaterialText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C371CC0A53B0048A94B /* MaterialText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		762D77201CC0416800D39E0D /* NotoSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSans-Regular.ttf"; sourceTree = "<group>"; };
 		76AE5C301CC08E0D0048A94B /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		76AE5C331CC08F7D0048A94B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		76AE5C351CC09F750048A94B /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		76AE5C371CC0A53B0048A94B /* MaterialText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,8 @@
 			isa = PBXGroup;
 			children = (
 				76AE5C301CC08E0D0048A94B /* MaterialView.swift */,
+				76AE5C351CC09F750048A94B /* MaterialButton.swift */,
+				76AE5C371CC0A53B0048A94B /* MaterialText.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -200,7 +206,9 @@
 				76AE5C311CC08E0D0048A94B /* MaterialView.swift in Sources */,
 				762D770A1CC03F8900D39E0D /* ViewController.swift in Sources */,
 				762D77081CC03F8900D39E0D /* AppDelegate.swift in Sources */,
+				76AE5C381CC0A53B0048A94B /* MaterialText.swift in Sources */,
 				76AE5C341CC08F7D0048A94B /* Constants.swift in Sources */,
+				76AE5C361CC09F750048A94B /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
