@@ -18,6 +18,16 @@ class ViewController: UIViewController
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
+    
+    override func viewDidAppear(animated: Bool)
+    {
+        super.viewDidAppear(animated)
+        
+        if NSUserDefaults.standardUserDefaults().valueForKey(KEY_UID) != nil
+            {
+                self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+            }
+    }
 
     override func didReceiveMemoryWarning()
     {
@@ -53,7 +63,7 @@ class ViewController: UIViewController
                                         print("Logged in!! \(authData)")
                                         
                                         NSUserDefaults.standardUserDefaults().setValue(authData.uid, forKey: KEY_UID)
-                                        self.performSegueWithIdentifier("loggedIn", sender: nil)
+                                        self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
                                     }
                             })
                     }
