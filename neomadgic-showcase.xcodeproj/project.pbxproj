@@ -23,6 +23,7 @@
 		76AE5C341CC08F7D0048A94B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C331CC08F7D0048A94B /* Constants.swift */; };
 		76AE5C361CC09F750048A94B /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C351CC09F750048A94B /* MaterialButton.swift */; };
 		76AE5C381CC0A53B0048A94B /* MaterialText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C371CC0A53B0048A94B /* MaterialText.swift */; };
+		76D69BEF1CC4C76F008389FB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D69BEE1CC4C76F008389FB /* DataService.swift */; };
 		8FA844B404E8C8A5B2167997 /* Pods_neomadgic_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D14815D4235137C012FC415 /* Pods_neomadgic_showcase.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,7 @@
 		76AE5C331CC08F7D0048A94B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		76AE5C351CC09F750048A94B /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		76AE5C371CC0A53B0048A94B /* MaterialText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialText.swift; sourceTree = "<group>"; };
+		76D69BEE1CC4C76F008389FB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		D129CD521AB688C9FB622667 /* Pods-neomadgic-showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neomadgic-showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-neomadgic-showcase/Pods-neomadgic-showcase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 		762D77061CC03F8900D39E0D /* neomadgic-showcase */ = {
 			isa = PBXGroup;
 			children = (
+				76D69BED1CC4C710008389FB /* Services */,
 				768AF5A91CC14AE300A562BD /* Frameworks */,
 				76AE5C321CC08F620048A94B /* Util */,
 				762D771B1CC0413C00D39E0D /* Model */,
@@ -153,6 +156,14 @@
 				76AE5C331CC08F7D0048A94B /* Constants.swift */,
 			);
 			name = Util;
+			sourceTree = "<group>";
+		};
+		76D69BED1CC4C710008389FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				76D69BEE1CC4C76F008389FB /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		7E84F175D8094373583FECCF /* Frameworks */ = {
@@ -299,6 +310,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76AE5C311CC08E0D0048A94B /* MaterialView.swift in Sources */,
+				76D69BEF1CC4C76F008389FB /* DataService.swift in Sources */,
 				762D770A1CC03F8900D39E0D /* ViewController.swift in Sources */,
 				762D77081CC03F8900D39E0D /* AppDelegate.swift in Sources */,
 				76AE5C381CC0A53B0048A94B /* MaterialText.swift in Sources */,
