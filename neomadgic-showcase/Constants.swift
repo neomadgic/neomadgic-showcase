@@ -15,3 +15,8 @@ let KEY_UID = "uid"
 
 //Segues
 let SEGUE_LOGGED_IN = "loggedIn"
+
+// Status Code
+let STATUS_ACCOUNT_INVALID_EMAIL = -5
+let STATUS_ACCOUNT_WRONG_PASSWORD = -6
+let STATUS_ACCOUNT_NONEXIST = -8

@@ -80,7 +80,51 @@ class ViewController: UIViewController
     {
         if let email = emailField.text where email != "", let pwd = passwordField.text where pwd != ""
             {
-            
+                DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock:
+                    { (error, authData) in
+                        
+                        if error != nil
+                            {
+                                print(error)
+                                
+                                if error.code == STATUS_ACCOUNT_NONEXIST
+                                    {
+                                        
+                                        DataService.ds.REF_BASE.createUser(email, password: pwd, withValueCompletionBlock:
+                                            { error, result in
+                                                
+                                                if error != nil
+                                                    {
+                                                        self.showErrorAlert("Could not create User", msg: "Please try again")
+                                                    }
+                                                else
+                                                    {
+                                                        NSUserDefaults.standardUserDefaults().setValue(result[KEY_UID], forKey: KEY_UID)
+                                                        DataService.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: nil)
+                                                        self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+                                                    }
+                                                
+                                            })
+                                    }
+                                else if error.code == STATUS_ACCOUNT_INVALID_EMAIL
+                                    {
+                                        self.showErrorAlert("Invalid Email", msg: "You have entered an invalid email")
+                                    }
+                                else if error.code == STATUS_ACCOUNT_WRONG_PASSWORD
+                                    {
+                                        self.showErrorAlert("Wrong Password", msg: "You entered the wrong password, try again")
+                                    }
+                                else
+                                    {
+                                        self.showErrorAlert("Something went wrong", msg: "Please check to see what went wrong")
+                                    }
+                            }
+                        else
+                            {
+                                self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
+                            }
+                        
+                    })
             }
         else
             {
