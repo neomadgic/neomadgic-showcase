@@ -184,10 +184,10 @@
             </objects>
             <point key="canvasLocation" x="50" y="241"/>
         </scene>
-        <!--View Controller-->
+        <!--FeedVC-->
         <scene sceneID="483-I9-FDZ">
             <objects>
-                <viewController id="wgl-zk-LQ0" sceneMemberID="viewController">
+                <viewController id="wgl-zk-LQ0" customClass="FeedVC" customModule="neomadgic_showcase" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tFu-jm-Fwg"/>
                         <viewControllerLayoutGuide type="bottom" id="QYn-R1-6Kv"/>
@@ -211,7 +211,7 @@
                                                     <rect key="frame" x="0.0" y="8" width="560" height="372.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="1BB-71-x2m">
-                                                            <rect key="frame" x="8" y="7" width="544" height="357"/>
+                                                            <rect key="frame" x="8" y="7" width="544" height="356"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UUE-pl-E75">
                                                                     <rect key="frame" x="0.0" y="0.0" width="544" height="50"/>
@@ -259,7 +259,7 @@
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="screen" translatesAutoresizingMaskIntoConstraints="NO" id="qRN-jU-ejB">
-                                                                    <rect key="frame" x="0.0" y="114" width="544" height="243"/>
+                                                                    <rect key="frame" x="0.0" y="114" width="544" height="242"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
@@ -294,6 +294,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="stb-Jt-DjR"/>
+                    <connections>
+                        <outlet property="tableView" destination="G1a-qh-bqV" id="eKe-a5-EMJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jxG-45-Ral" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

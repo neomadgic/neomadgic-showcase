@@ -19,6 +19,7 @@
 		768AF5AD1CC14B0600A562BD /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768AF5AA1CC14B0600A562BD /* Bolts.framework */; };
 		768AF5AE1CC14B0600A562BD /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768AF5AB1CC14B0600A562BD /* FBSDKCoreKit.framework */; };
 		768AF5AF1CC14B0600A562BD /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 768AF5AC1CC14B0600A562BD /* FBSDKLoginKit.framework */; };
+		76987C071CCA9CC300B24044 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76987C061CCA9CC300B24044 /* FeedVC.swift */; };
 		76AE5C311CC08E0D0048A94B /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C301CC08E0D0048A94B /* MaterialView.swift */; };
 		76AE5C341CC08F7D0048A94B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C331CC08F7D0048A94B /* Constants.swift */; };
 		76AE5C361CC09F750048A94B /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C351CC09F750048A94B /* MaterialButton.swift */; };
@@ -44,6 +45,7 @@
 		768AF5AA1CC14B0600A562BD /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		768AF5AB1CC14B0600A562BD /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		768AF5AC1CC14B0600A562BD /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		76987C061CCA9CC300B24044 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		76AE5C301CC08E0D0048A94B /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		76AE5C331CC08F7D0048A94B /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		76AE5C351CC09F750048A94B /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
@@ -96,7 +98,6 @@
 				762D77191CC0412B00D39E0D /* Controller */,
 				762D771C1CC0414100D39E0D /* Resources */,
 				762D77071CC03F8900D39E0D /* AppDelegate.swift */,
-				762D77091CC03F8900D39E0D /* ViewController.swift */,
 				762D770B1CC03F8900D39E0D /* Main.storyboard */,
 				762D770E1CC03F8900D39E0D /* Assets.xcassets */,
 				762D77101CC03F8900D39E0D /* LaunchScreen.storyboard */,
@@ -108,6 +109,8 @@
 		762D77191CC0412B00D39E0D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				762D77091CC03F8900D39E0D /* ViewController.swift */,
+				76987C061CCA9CC300B24044 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				76D69BEF1CC4C76F008389FB /* DataService.swift in Sources */,
 				762D770A1CC03F8900D39E0D /* ViewController.swift in Sources */,
 				762D77081CC03F8900D39E0D /* AppDelegate.swift in Sources */,
+				76987C071CCA9CC300B24044 /* FeedVC.swift in Sources */,
 				76AE5C381CC0A53B0048A94B /* MaterialText.swift in Sources */,
 				76AE5C341CC08F7D0048A94B /* Constants.swift in Sources */,
 				76AE5C361CC09F750048A94B /* MaterialButton.swift in Sources */,
