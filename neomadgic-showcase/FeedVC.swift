@@ -14,6 +14,8 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     @IBOutlet weak var tableView: UITableView!
     
+    var posts = [Post]()
+    
     override func viewDidLoad()
     {
         tableView.delegate = self
@@ -21,15 +23,23 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         super.viewDidLoad()
         
         DataService.ds.REF_POSTS.observeEventType(.Value, withBlock:
-            { snapshot in
-            
-                print(snapshot.value)
+            { snapshot in print(snapshot.value)
+                
+                self.posts = []
                 
                 if let snapshots = snapshot.children.allObjects as? [FDataSnapshot]
                     {
                         for snap in snapshots
                             {
                                 print("SNAP: \(snap)")
+                                
+                                if let postDict = snap.value as? Dictionary<String, AnyObject>
+                                    {
+                                        let key = snap.key
+                                        let post = Post(postKey: key, dictionary: postDict)
+                                        
+                                        self.posts.append(post)
+                                    }
                             }
                     }
                 
@@ -45,11 +55,14 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return 3
+        return posts.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
+        let post = posts[indexPath.row]
+        print(post.postDescription)
+        
         return tableView.dequeueReusableCellWithIdentifier("PostCell") as! PostCell
     }
     
