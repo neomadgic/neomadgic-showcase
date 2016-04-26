@@ -25,6 +25,7 @@
 		76AE5C361CC09F750048A94B /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C351CC09F750048A94B /* MaterialButton.swift */; };
 		76AE5C381CC0A53B0048A94B /* MaterialText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AE5C371CC0A53B0048A94B /* MaterialText.swift */; };
 		76CA3DE41CCAD591003353BB /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CA3DE31CCAD591003353BB /* PostCell.swift */; };
+		76CB247A1CCFD396007989C4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76CB24791CCFD396007989C4 /* Post.swift */; };
 		76D69BEF1CC4C76F008389FB /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76D69BEE1CC4C76F008389FB /* DataService.swift */; };
 		8FA844B404E8C8A5B2167997 /* Pods_neomadgic_showcase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D14815D4235137C012FC415 /* Pods_neomadgic_showcase.framework */; };
 /* End PBXBuildFile section */
@@ -52,6 +53,7 @@
 		76AE5C351CC09F750048A94B /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		76AE5C371CC0A53B0048A94B /* MaterialText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialText.swift; sourceTree = "<group>"; };
 		76CA3DE31CCAD591003353BB /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		76CB24791CCFD396007989C4 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		76D69BEE1CC4C76F008389FB /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		D129CD521AB688C9FB622667 /* Pods-neomadgic-showcase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-neomadgic-showcase.debug.xcconfig"; path = "Pods/Target Support Files/Pods-neomadgic-showcase/Pods-neomadgic-showcase.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -131,6 +133,7 @@
 		762D771B1CC0413C00D39E0D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				76CB24791CCFD396007989C4 /* Post.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				76AE5C381CC0A53B0048A94B /* MaterialText.swift in Sources */,
 				76AE5C341CC08F7D0048A94B /* Constants.swift in Sources */,
 				76AE5C361CC09F750048A94B /* MaterialButton.swift in Sources */,
+				76CB247A1CCFD396007989C4 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
