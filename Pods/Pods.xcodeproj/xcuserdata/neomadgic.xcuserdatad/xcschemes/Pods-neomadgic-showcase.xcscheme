@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '389FD73E285915D3EB765BC0'
+               BlueprintIdentifier = '10C3537B889728D997D11B69'
                BlueprintName = 'Pods-neomadgic-showcase'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_neomadgic_showcase.framework'>

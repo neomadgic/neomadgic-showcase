@@ -15,6 +15,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     @IBOutlet weak var tableView: UITableView!
     
     var posts = [Post]()
+    static var imgCache = NSCache()
     
     override func viewDidLoad()
     {
@@ -63,10 +64,17 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         let post = posts[indexPath.row]
         print(post.postDescription)
         
-        
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell
             {
-                cell.configureCell(post)
+                
+                var img: UIImage?
+                
+                if let url = post.imageUrl
+                    {
+                        img = FeedVC.imgCache.objectForKey(url) as? UIImage
+                    }
+                
+                cell.configureCell(post, img: img)
                 return cell
             }
         else

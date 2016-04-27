@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class PostCell: UITableViewCell
 {
@@ -33,12 +34,29 @@ class PostCell: UITableViewCell
         
     }
     
-    func configureCell(post: Post)
+    func configureCell(post: Post, img: UIImage?)
     {
         self.post = post
         
         self.likesLbl.text = "\(post.likes)"
         self.descriptionText.text = post.postDescription
+        
+        if post.imageUrl != nil
+            {
+                if img != nil
+                    {
+                        self.screenImg.image = img
+                    }
+                else
+                    {
+                    
+                    }
+            }
+        else
+            {
+                self.screenImg.hidden = true
+            }
+        
     }
 
 }
