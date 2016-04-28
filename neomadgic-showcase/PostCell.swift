@@ -18,6 +18,7 @@ class PostCell: UITableViewCell
     @IBOutlet weak var descriptionText: UITextView!
     
     var post: Post!
+    var request: Request?
 
     override func awakeFromNib()
     {
@@ -49,7 +50,17 @@ class PostCell: UITableViewCell
                     }
                 else
                     {
-                    
+                        request = Alamofire.request(.GET, post.imageUrl!).validate(contentType: ["image/*"]).response(completionHandler: { request, response, data, err in
+                            
+                                if err == nil
+                                    {
+                                        //normally use if let, but too lazy this time around
+                                        let img = UIImage(data: data!)!
+                                        self.screenImg.image = img
+                                        FeedVC.imgCache.setObject(img, forKey: self.post.imageUrl!)
+                                    }
+                            
+                            })
                     }
             }
         else

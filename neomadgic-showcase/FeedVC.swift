@@ -62,10 +62,10 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let post = posts[indexPath.row]
-        print(post.postDescription)
         
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell
             {
+                cell.request?.cancel()
                 
                 var img: UIImage?
                 
