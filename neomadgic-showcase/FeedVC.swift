@@ -20,6 +20,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     var posts = [Post]()
     static var imgCache = NSCache()
     var imagePicker: UIImagePickerController!
+    var imageSelected = false;
     
     override func viewDidLoad()
     {
@@ -55,7 +56,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                     }
                 
                 self.tableView.reloadData()
-                
             })
     }
     
@@ -112,6 +112,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     {
         imagePicker.dismissViewControllerAnimated(true, completion: nil)
         imageSelectionImage.image = image;
+        imageSelected = true;
     }
     
     @IBAction func selectImage(sender: UITapGestureRecognizer)
@@ -124,7 +125,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         if let txt = postField.text where txt != ""
             {
-                if let img = imageSelectionImage.image
+                if let img = imageSelectionImage.image where imageSelected == true
                     {
                         let urlStr = "https://post.imageshack.us/upload_api.php"
                         let url = NSURL(string: urlStr)!
@@ -144,7 +145,6 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                                 switch encodingResult
                                     {
                                         case .Success(let upload, _, _):
-                                            
                                             upload.responseJSON(completionHandler:
                                                 { response in
                                                     if let info = response.result.value as? Dictionary<String, AnyObject>
@@ -155,21 +155,26 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
                                                                     if let imgLink = links["image_link"]
                                                                         {
                                                                             print(imgLink)
+                                                                            self.postToFirebase(imgLink)
                                                                         }
                                                                 }
                                                         }
-                                                    })
-                   
+                                                })
                                         case .Failure(let error):
-                                            
                                             print(error)
-                                    
                                     }
                             }
-                        
-                        
+                    }
+                else
+                    {
+                        self.postToFirebase(nil)
                     }
             }
+        
+    }
+    
+    func postToFirebase(imgUrl: String?)
+    {
         
     }
     
