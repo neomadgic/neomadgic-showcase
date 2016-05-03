@@ -175,7 +175,26 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
     
     func postToFirebase(imgUrl: String?)
     {
+        var post: Dictionary<String, AnyObject> =
+            [
+                "description": postField.text!,
+                "likes": 0
+            ]
         
+        if imgUrl != nil
+            {
+                post["imgUrl"] = imgUrl!
+            }
+        
+        let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
+        
+        firebasePost.setValue(post)
+        
+        postField.text = ""
+        imageSelectionImage.image = UIImage(named: "camera")
+        imageSelected = false
+        
+        tableView.reloadData()
     }
     
 }
