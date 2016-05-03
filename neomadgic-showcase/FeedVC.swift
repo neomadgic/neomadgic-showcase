@@ -183,7 +183,7 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource, UIIm
         
         if imgUrl != nil
             {
-                post["imgUrl"] = imgUrl!
+                post["imageUrl"] = imgUrl!
             }
         
         let firebasePost = DataService.ds.REF_POSTS.childByAutoId()
