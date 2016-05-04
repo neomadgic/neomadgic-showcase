@@ -8,6 +8,7 @@
 
 import UIKit
 import Alamofire
+import Firebase
 
 class PostCell: UITableViewCell
 {
@@ -16,9 +17,11 @@ class PostCell: UITableViewCell
     @IBOutlet weak var screenImg: UIImageView!
     @IBOutlet weak var likesLbl: UILabel!
     @IBOutlet weak var descriptionText: UITextView!
+    @IBOutlet weak var likeImage: UIImageView!
     
     var post: Post!
     var request: Request?
+    var likeRef: Firebase!
 
     override func awakeFromNib()
     {
@@ -38,7 +41,7 @@ class PostCell: UITableViewCell
     func configureCell(post: Post, img: UIImage?)
     {
         self.post = post
-        
+        likeRef = DataService.ds.REF_USER_CURRENT.childByAppendingPath("likes").childByAppendingPath(post.postKey)
         self.likesLbl.text = "\(post.likes)"
         self.descriptionText.text = post.postDescription
         
@@ -67,6 +70,22 @@ class PostCell: UITableViewCell
             {
                 self.screenImg.hidden = true
             }
+        
+        likeRef.observeSingleEventOfType(.Value, withBlock:
+            { snapshot in
+                
+                //If Data does not exist, then data is NSNull
+                //If there is no data in snapshot.value, then you will get an NSNull.
+                
+                if let didNotExist = snapshot.value as? NSNull
+                    {
+                        self.likeImage.image = UIImage(named: "hearts-empty")
+                    }
+                else
+                    {
+                        self.likeImage.image = UIImage(named: "hearts-full")
+                    }
+            })
         
     }
 
