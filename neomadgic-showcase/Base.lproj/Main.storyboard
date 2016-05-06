@@ -261,12 +261,12 @@
                                                     <rect key="frame" x="0.0" y="8" width="560" height="372.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="1BB-71-x2m">
-                                                            <rect key="frame" x="8" y="7" width="544" height="357"/>
+                                                            <rect key="frame" x="8" y="7" width="544" height="356"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillProportionally" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="UUE-pl-E75">
                                                                     <rect key="frame" x="0.0" y="0.0" width="544" height="50"/>
                                                                     <subviews>
-                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="dic-jO-9ws">
+                                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="WaterfallFace" translatesAutoresizingMaskIntoConstraints="NO" id="dic-jO-9ws">
                                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                                             <constraints>
                                                                                 <constraint firstAttribute="width" constant="50" id="7uL-yW-oeg"/>
@@ -312,7 +312,7 @@
                                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                                 </textView>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="screen" translatesAutoresizingMaskIntoConstraints="NO" id="qRN-jU-ejB">
-                                                                    <rect key="frame" x="0.0" y="130" width="544" height="227"/>
+                                                                    <rect key="frame" x="0.0" y="130" width="544" height="226"/>
                                                                 </imageView>
                                                             </subviews>
                                                         </stackView>
@@ -394,11 +394,11 @@
         </scene>
     </scenes>
     <resources>
+        <image name="WaterfallFace" width="100" height="100"/>
         <image name="camera" width="50" height="50"/>
         <image name="fb-icon" width="65" height="65"/>
         <image name="glasses" width="475" height="175"/>
         <image name="heart-empty" width="150" height="147"/>
-        <image name="profile" width="100" height="104"/>
         <image name="screen" width="300" height="534"/>
     </resources>
 </document>
